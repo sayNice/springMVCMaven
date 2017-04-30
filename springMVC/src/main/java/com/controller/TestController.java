@@ -26,6 +26,8 @@ public class TestController {
 		model.addAttribute("result", result);
 		return "diary";
 	}
+	
+	
 	@RequestMapping("getAllDiary")
 	public String getAllDiary(Model model){
 		List<Diary> result = diaryService.getAllDiary();
